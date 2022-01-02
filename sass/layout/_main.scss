@@ -1,0 +1,104 @@
+.main {
+  &__exchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .exchange {
+
+      &__img{
+        margin-bottom: 4rem;
+      }
+
+      &__title {
+        margin-bottom: 2.4rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+      }
+
+      &__text {
+        margin-bottom: 4.8rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: #757575;
+      }
+
+      &__date{
+
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.936rem;
+        .update{
+          font-weight: bolder;
+        }
+      }
+    
+    }
+  }
+
+  .exchange__coins {
+    display: flex;
+    font-family: "inter", sans-serif;
+
+    %title {
+      margin: 0 2rem 1.2rem 3rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.344rem;
+      text-align: left;
+      font-family: "DM sans", sans-serif;
+    }
+
+    .title{
+      @extend %title;
+      color: $bitcoin-orange;
+    }
+
+    .title--blue{
+      @extend %title;
+      color: $secondary-blue;
+    }
+
+    .slider__arrow--left{
+      
+      transform: rotate(180deg);
+    }
+
+    .slider__arrow--right{
+      color: white;
+    }
+
+    .slider{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-snap-align: center start ;
+  
+    }
+
+    .table {
+      margin: 0 2rem 2.4rem 2rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.936rem;
+      text-align: left;
+      
+      td:first-child{
+        padding:.6rem 1.25rem;
+        color: #B5B0AC;
+        
+      }
+      td:last-child{
+        padding: .6rem 1.25rem;
+      }
+    }
+
+    
+  }
+
+
+}

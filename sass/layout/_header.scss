@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 4.2rem 5% 0 5%;
+  background: linear-gradient(
+    207.8deg,
+    $warm-black 16.69%,
+    $bitcoin-orange 100%
+  );
+
+  &__logo {
+    width: 15rem;
+    margin-bottom: 3.6rem;
+  }
+
+  &__title-container {
+    .title-container {
+      &__title {
+        width: 100%;
+        margin-bottom: 2.4rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+        color: $just-white;
+      }
+      &__text {
+        margin-bottom: 3.2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color:$soft-orange;
+      }
+      &__button{
+        position:relative;
+        top:15px;
+        padding: 1.5rem 2.39rem;
+
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.823rem;
+
+        color: $warm-black;
+        background-color: $off-white;
+
+        
+        box-shadow: 0 4px 8px rgba($color: $warm-black, $alpha: 0.16);
+
+        text-decoration: none;
+
+        .button__icon{
+          display: inline-block;
+          width: 13px;
+          height: 8px;
+          background-image: url("../../assets/icons/down-arrow.svg");
+        }
+      }
+    }
+  }
+}
+
