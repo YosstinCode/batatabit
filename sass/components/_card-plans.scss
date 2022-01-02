@@ -1,14 +1,19 @@
 .plans__ListPlans {
   display: flex;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x mandatory;
+
 
   .card {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     width: 19rem;
-    margin: 0 auto;
+    margin: 0 19%;
     padding: 1.6rem;
     font-family: "inter", sans-serif;
+    scroll-snap-align: center;
 
     &__recommended {
       width: 10rem;
