@@ -14,13 +14,11 @@
           font-size: 1.8rem;
           font-weight: 700;
           line-height: 1.8rem;
-        color:$just-white;
+          color:$just-white;
       }
       &__text{
+          @extend %text;
           margin-bottom: 1.2rem;
-          font-size: 1.4rem;
-          font-weight: 500;
-          line-height: 1.8rem;
           color: $gray;
       }
   }

@@ -1,0 +1,11 @@
+.main__plans {
+  text-align: center;
+  .plans {
+    &__title {
+      @extend %title;
+    }
+    &__text {
+      @extend %text;
+    }
+  }
+}

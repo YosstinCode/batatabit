@@ -5,3 +5,18 @@
 .container{
     padding: 5.9rem 1.6rem 3rem 1.6rem;
 }
+
+%title{
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+%text{
+    margin-bottom: 4.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: $gray;
+}

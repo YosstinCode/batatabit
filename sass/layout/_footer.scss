@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    background: $bitcoin-orange;
+
+    .footer__list{
+        list-style: none;
+        .list__item{
+            margin-bottom: .8rem;
+            .item__link{
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+                color: $just-white;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}

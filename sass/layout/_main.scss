@@ -12,18 +12,11 @@
       }
 
       &__title {
-        margin-bottom: 2.4rem;
-        font-size: 2.4rem;
-        font-weight: 700;
-        line-height: 2.6rem;
+        @extend %title;
       }
 
       &__text {
-        margin-bottom: 4.8rem;
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1.8rem;
-        color: #757575;
+        @extend %text;
       }
 
       &__date{
@@ -43,7 +36,7 @@
     display: flex;
     font-family: "inter", sans-serif;
 
-    %title {
+    %title-table {
       margin: 0 2rem 1.2rem 3rem;
       font-size: 1.8rem;
       font-weight: 700;
@@ -52,13 +45,13 @@
       font-family: "DM sans", sans-serif;
     }
 
-    .title{
-      @extend %title;
+    .title-table{
+      @extend %title-table;
       color: $bitcoin-orange;
     }
 
-    .title--blue{
-      @extend %title;
+    .title-table--blue{
+      @extend %title-table;
       color: $secondary-blue;
     }
 
