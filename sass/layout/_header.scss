@@ -18,33 +18,43 @@
   }
 
   &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .title-container {
       &__title {
-        @extend %title;
+        @include title(2.4rem,2.6rem);
+
+        @include tablet{
+            @include title(4rem, 4.2rem);
+            width: 46.4rem;
+        }
+
         width: 100%;
         margin-bottom: 2.4rem;
         color: $just-white;
       }
       &__text {
-        @extend %text;
+        @include text(1.4rem,1.8rem);
+
+        @include tablet{
+          @include text(2rem,2.4rem)
+        };
+
         margin-bottom: 3.2rem;
-        color:$soft-orange;
+        color: #bababa;
       }
       &__button{
         position:relative;
         top:15px;
         padding: 1.5rem 2.39rem;
-
         font-size: 1.4rem;
         font-weight: 700;
         line-height: 1.823rem;
-
         color: $warm-black;
         background-color: $off-white;
-
-        
         box-shadow: 0 4px 8px rgba($color: $warm-black, $alpha: 0.16);
-
         text-decoration: none;
 
         .button__icon{

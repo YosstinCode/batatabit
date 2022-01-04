@@ -1,18 +1,30 @@
-.main__product-detail{
-    background-color: $warm-black;
-    text-align: center;
-    .product-detail{
-        &__title{
-            @extend %title;
-            margin-bottom: 2.4rem;
-            color:$just-white;
-        }
-        &__text{
-            @extend %text;
-            margin-bottom: 3.2rem;
-            color:$gray;
-        }
+.main__product-detail {
+  background-color: $warm-black;
+  text-align: center;
+  .product-detail {
+    &__title {
+      @include title(2.4rem, 2.6rem);
+
+      @include tablet {
+        @include title(4rem, 4.2rem);
+        width: 46.4rem;
+       
+      }
+
+      margin-bottom: 2.4rem;
+      color: $just-white;
     }
 
+    &__text {
+      @include text(1.4rem, 1.8rem);
 
+      @include tablet {
+        @include text(2rem, 2.4rem);
+        color: $soft-gray;
+      }
+      margin-bottom: 3.2rem;
+      color: $soft-gray;
+      
+    }
+  }
 }

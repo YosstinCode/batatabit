@@ -1,25 +1,44 @@
 .product-detail__card-detail {
-    margin-bottom: 1.6rem;
-    padding: 1.6rem;
-    height:16rem;
-    background:$black;
-    text-align: left;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+  height: 16rem;
+  background: $black;
+  text-align: left;
+
+  @include tablet {
+    width: 34.5rem;
+    height: 20rem;
+  }
+
   .card-detail {
-      &__icon{
-        width: 2rem;
-        margin-bottom: 1.2rem;
+    &__icon {
+      width: 2rem;
+      margin-bottom: 1.2rem;
+    }
+    &__title {
+      margin-bottom: 1.2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: $just-white;
+    }
+    &__text {
+      @include text(1.4rem, 1.8rem);
+      @include tablet {
+        @include text(2rem, 2.4rem);
+        color: $soft-gray;
       }
-      &__title{
-          margin-bottom: 1.2rem;
-          font-size: 1.8rem;
-          font-weight: 700;
-          line-height: 1.8rem;
-          color:$just-white;
-      }
-      &__text{
-          @extend %text;
-          margin-bottom: 1.2rem;
-          color: $gray;
-      }
+      margin-bottom: 1.2rem;
+      color: $soft-gray;
+    }
+  }
+}
+
+@include tablet {
+  .product-detail__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
   }
 }

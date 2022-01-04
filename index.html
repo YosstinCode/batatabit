@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "description" content = "La próxima revolución en el intercambio de criptomonedas.">
     <title>Batata Bit</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="./dist/css/main.min.css" async/>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
@@ -12,10 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <!--Styles-->
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
-    <!--Javascript-->
-    <script src="./javascript/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -52,11 +51,6 @@
           monedas más importantes del mundo.
         </p>
         <section class="exchange__coins">
-          <img
-            class="slider__arrow--left"
-            src="./assets/icons/right-arrow.svg"
-            alt=""
-          />
           <section class="slider">
             <article class="slider__article">
               <h3 class="title-table">Monedas.</h3>
@@ -103,7 +97,7 @@
                 </tr>
               </table>
             </article>
-            <article class="slider__article hidden">
+            <article class="slider__article">
               <h3 class="title-table--blue">Comisiones.</h3>
               <table class="table">
                 <tr>
@@ -129,11 +123,6 @@
               </table>
             </article>
           </section>
-          <img
-            class="slider__arrow--right"
-            src="./assets/icons/right-arrow.svg"
-            alt=""
-          />
         </section>
         <p class="exchange__date">
           <span class="update">Actualizado: </span>19 Julio 23:45
@@ -146,54 +135,56 @@
         <p class="product-detail__text">
           Confiable y diseñado para su uso diario.
         </p>
-        <article class="product-detail__card-detail">
-          <img
-            class="card-detail__icon"
-            src="./assets/icons/clock.svg"
-            alt="realtime icon"
-          />
-          <h3 class="card-detail__title">Tiempo real</h3>
-          <p class="card-detail__text">
-            Nuestro API toma información minuto a minuto sobre las tasas que más
-            determinan el comportamiento.
-          </p>
-        </article>
-        <article class="product-detail__card-detail">
-          <img
-            class="card-detail__icon"
-            src="./assets/icons/eye.svg"
-            alt="Eye-icon"
-          />
-          <h3 class="card-detail__title">No hay tasas escondidas</h3>
-          <p class="card-detail__text">
-            Ni en la compra o al momento de exit, Batabit siempre te muestra el
-            costo real de lo que estás adquiriendo.
-          </p>
-        </article>
-        <article class="product-detail__card-detail">
-          <img
-            class="card-detail__icon"
-            src="./assets/icons/dollar-sign.svg"
-            alt="dollar sing icon"
-          />
-          <h3 class="card-detail__title">Compara monedas</h3>
-          <p class="card-detail__text">
-            No más rumores, con Babtabit sabrás el valor real de cada moneda en
-            el mercado actual.
-          </p>
-        </article>
-        <article class="product-detail__card-detail">
-          <img
-            class="card-detail__icon"
-            src="./assets/icons/check-circle.svg"
-            alt="check-circle icon"
-          />
-          <h3 class="card-detail__title">Información confiable</h3>
-          <p class="card-detail__text">
-            Nuestras fuentes están 100% verificadas y continuamos auditando su
-            contenido mientras se actualizan.
-          </p>
-        </article>
+        <div class="product-detail__container">
+          <article class="product-detail__card-detail">
+            <img
+              class="card-detail__icon"
+              src="./assets/icons/clock.svg"
+              alt="realtime icon"
+            />
+            <h3 class="card-detail__title">Tiempo real</h3>
+            <p class="card-detail__text">
+              Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.
+            </p>
+          </article>
+          <article class="product-detail__card-detail">
+            <img
+              class="card-detail__icon"
+              src="./assets/icons/eye.svg"
+              alt="Eye-icon"
+            />
+            <h3 class="card-detail__title">No hay tasas escondidas</h3>
+            <p class="card-detail__text">
+              Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el costo real de lo que estás adquiriendo.
+            </p>
+          </article>
+          <article class="product-detail__card-detail">
+            <img
+              class="card-detail__icon"
+              src="./assets/icons/dollar-sign.svg"
+              alt="dollar sing icon"
+            />
+            <h3 class="card-detail__title">Compara monedas</h3>
+            <p class="card-detail__text">
+              No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en el mercado actual.
+            </p>
+          </article>
+          <article class="product-detail__card-detail">
+            <img
+              class="card-detail__icon"
+              src="./assets/icons/check-circle.svg"
+              alt="check-circle icon"
+            />
+            <h3 class="card-detail__title">Información confiable</h3>
+            <p class="card-detail__text">
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
+            </p>
+          </article>
+        </div>
       </section>
       <section class="container main__comodin">
         <h2 class="comodin__title">Conócelo hoy.</h2>
@@ -253,7 +244,11 @@
           <a class="item__link" href="#">yosstincode</a>
         </li>
       </ul>
-      <img src="./assets/img/logo-footer.svg" alt="batatabit 2020 footer" />
+      <img
+        class="footer__logo"
+        src="./assets/img/logo-footer.svg"
+        alt="batatabit 2020 footer"
+      />
     </footer>
   </body>
 </html>

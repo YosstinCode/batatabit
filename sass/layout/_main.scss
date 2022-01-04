@@ -6,29 +6,36 @@
     text-align: center;
 
     .exchange {
-
-      &__img{
+      &__img {
         margin-bottom: 4rem;
       }
 
       &__title {
-        @extend %title;
+        @include title(2.4rem, 2.6rem);
+
+        @include tablet {
+          @include title(4rem, 4.2rem);
+          width: 46.4rem;
+        }
       }
 
       &__text {
-        @extend %text;
+        @include text(1.4rem, 1.8rem);
+
+        @include tablet {
+          @include text(2rem, 2.4rem);
+        }
       }
 
-      &__date{
-
+      &__date {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.936rem;
-        .update{
+
+        .update {
           font-weight: bolder;
         }
       }
-    
     }
   }
 
@@ -45,53 +52,58 @@
       font-family: "DM sans", sans-serif;
     }
 
-    .title-table{
+    .title-table {
       @extend %title-table;
       color: $bitcoin-orange;
     }
 
-    .title-table--blue{
+    .title-table--blue {
       @extend %title-table;
       color: $secondary-blue;
     }
 
-    .slider__arrow--left{
-      
+    .slider__arrow--left {
       transform: rotate(180deg);
     }
 
-    .slider__arrow--right{
+    .slider__arrow--right {
       color: white;
     }
 
-    .slider{
+    .slider {
+      width: 25rem;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
       overflow-x: scroll;
-      scroll-snap-align: center start ;
-  
+      overscroll-behavior: contain;
+      scroll-snap-type: x mandatory;
+      &__article{
+        width: 23rem;
+        scroll-snap-align: center;
+      }
+
+      @include tablet {
+        overflow-x: visible;
+        justify-content: center;
+      }
     }
 
+
     .table {
+      width: 20rem;
       margin: 0 2rem 2.4rem 2rem;
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.936rem;
       text-align: left;
-      
-      td:first-child{
-        padding:.6rem 1.25rem;
-        color: #B5B0AC;
-        
+
+      td:first-child {
+        padding: 0.6rem 1.25rem;
+        color: $gray;
       }
-      td:last-child{
-        padding: .6rem 1.25rem;
+      td:last-child {
+        padding: 0.6rem 1.25rem;
       }
     }
-
-    
   }
-
-
 }

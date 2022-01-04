@@ -15,9 +15,17 @@
                 line-height: 1.8rem;
                 color: $just-white;
                 text-decoration: none;
+                @include tablet{
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                }
             }
         }
 
+    }
+
+    .footer__logo{
+        width: 12rem;
     }
 
 }
